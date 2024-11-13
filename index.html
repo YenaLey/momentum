@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Momentum</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script src="./scripts/writeForm.js"></script>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <div class="container">
+      <dotlottie-player
+        class="animation-bear"
+        src="https://lottie.host/a69d23fd-3b70-4a6b-b3da-c9c1ef9ba825/4mtJfPsdgn.json"
+        background="transparent"
+        speed="1"
+        loop
+        autoplay
+      ></dotlottie-player>
+      <div class="timer"></div>
+      <div class="video"></div>
+      <div class="todo"></div>
+      <div class="name"></div>
+      <div class="weather"></div>
+      <div class="clock">
+        <h1>22:29:30</h1>
+        <h2>2024.11.29 MON</h2>
+      </div>
+    </div>
+  </body>
+</html>
