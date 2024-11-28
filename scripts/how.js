@@ -10,7 +10,9 @@ how.addEventListener("mouseenter", (e) => {
     ⏱️ <em>공부 타이머</em> <br/>
     - <strong>C키</strong>를 눌러 <strong>시작/정지</strong> 토글<br/><br/>
     📺 <em>유튜브 링크</em> <br/>
-    - <strong>새로고침</strong>을 하여 새로 설정
+    - <strong>새로고침</strong>을 하여 새로 설정<br/><br/>
+    🔵➡️ <em>로그아웃 기능</em> <br/>
+    - 파란 화살표를 눌러 <strong>모든 데이터를 초기화</strong>
   `;
   tooltip.style.position = "absolute";
   tooltip.style.left = `${e.pageX + 10}px`;
