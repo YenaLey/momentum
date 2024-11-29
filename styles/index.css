@@ -132,8 +132,8 @@ body {
 }
 
 .timer {
-  background-color: rgb(255, 255, 255, 0.3);
-  border: 15px solid white;
+  background-color: #c9e6f0;
+  border: 15px double white;
   border-radius: 50%;
   width: 85%;
   aspect-ratio: 1 / 1;
@@ -148,7 +148,24 @@ body {
 }
 
 .timer:hover {
-  background-color: rgb(255, 255, 255, 0.1);
+  background-color: #b9d9e3;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  animation: pulse 2.5s infinite ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .video {
@@ -178,6 +195,7 @@ body {
 }
 
 .weather {
+  border: 3px solid rgb(255, 255, 255, 0.9);
   border-radius: 20px;
   height: 90%;
   aspect-ratio: 16 / 9;
@@ -187,8 +205,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(255, 255, 255, 0.3);
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  background-color: #c9e6f0;
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
 
   & section {
     display: flex;

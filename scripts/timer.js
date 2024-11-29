@@ -34,8 +34,10 @@ function stopTimer() {
 function toggleTimer() {
   if (isRunning) {
     stopTimer();
+    timerNum.classList.remove("pulse");
   } else {
     startTimer();
+    timerNum.classList.add("pulse");
   }
   isRunning = !isRunning;
 }
