@@ -29,7 +29,6 @@ function getWeather(lat, lon) {
       return response.json();
     })
     .then(function (json) {
-      console.log(json);
       const temperature = json.main.temp;
       const weatherDescription = json.weather[0].main;
       const weatherIcon = json.weather[0].icon;
