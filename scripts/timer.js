@@ -3,6 +3,7 @@ let timerNum = document.createElement("h2");
 let isRunning = false;
 let timerInterval;
 let time = parseInt(localStorage.getItem("timer")) || 0;
+let startTimestamp = parseInt(localStorage.getItem("startTimestamp")) || null;
 updateTimerDisplay();
 timerBox.append(timerNum);
 
@@ -20,8 +21,14 @@ function updateTimerDisplay() {
 }
 
 function startTimer() {
+  if (!startTimestamp) {
+    startTimestamp = Date.now() - time * 1000; // Adjust for existing time
+    localStorage.setItem("startTimestamp", startTimestamp);
+  }
+
   timerInterval = setInterval(() => {
-    time++;
+    const now = Date.now();
+    time = Math.floor((now - startTimestamp) / 1000);
     updateTimerDisplay();
     localStorage.setItem("timer", time);
   }, 1000);
@@ -29,6 +36,8 @@ function startTimer() {
 
 function stopTimer() {
   clearInterval(timerInterval);
+  localStorage.removeItem("startTimestamp");
+  startTimestamp = null;
 }
 
 function toggleTimer() {
@@ -51,3 +60,10 @@ document.addEventListener("keydown", (e) => {
     toggleTimer();
   }
 });
+
+// Recover time on page load
+if (startTimestamp) {
+  const now = Date.now();
+  time = Math.floor((now - startTimestamp) / 1000);
+  updateTimerDisplay();
+}
