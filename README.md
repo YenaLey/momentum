@@ -1,6 +1,7 @@
 # 📚 Momentum
 
-<img width="1440" alt="Momentum" src="https://github.com/user-attachments/assets/eb5dd278-3d8e-429b-ad0e-c6561c316d24">
+<img width="1440" alt="스크린샷 2024-11-29 오후 9 38 37" src="https://github.com/user-attachments/assets/b47522d3-895a-4924-a0a0-5574f239515f">
+<img width="1440" alt="스크린샷 2024-11-30 오전 11 39 11" src="https://github.com/user-attachments/assets/d50e41d7-070f-48f1-bc61-2bd711caf70a">
 
 ## 🔥 프로젝트 소개
 공부와 생산성을 높이기 위한 웹 애플리케이션입니다.
@@ -38,5 +39,3 @@
 - **Vanilla JavaScript**
 - **HTML/CSS**
 - **OpenWeather API**
-
-<img width="1440" alt="스크린샷 2024-11-28 오후 6 46 42" src="https://github.com/user-attachments/assets/fec09ca4-e4f9-4187-be30-cccfe7c64205">
